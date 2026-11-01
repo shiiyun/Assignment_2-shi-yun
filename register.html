@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AZoom Car Rental - Register</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <img class="logo" src="images/Logo.png" alt="">
+
+            <section class="nav-links-and-search">
+            <div class="nav-links">
+                <a href="home.html">Home</a> 
+                <a href="cars.html">Cars</a>
+                <a href="about.html">About</a>
+            </div>
+
+            <div class="nav-search">
+                <form role="search"><input type="search" class="nav-search-input" placeholder="Search..." aria-label="Search"></form>
+                <a href="login.html" id="nav-login-btn">Login</a>
+            </div>
+            </section>
+
+        </div>
+    </header>
+
+    <section class="register-section">
+
+        <div class="register-container">
+
+            <h1>Create an Account</h1>
+            <p class="register-description">
+                Join AZoom and get ready for your next journey!
+            </p>
+
+            <form id="register-form">
+
+                <p id="register-message" role="status"></p>
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                           placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" maxlength="8" minlength="8" pattern="[0-9]{8}" inputmode="numeric" required>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" minlength="8" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm password" minlength="8" required>
+                </div>
+
+                <button type="submit" class="register-btn">Create Account</button>
+                
+
+            </form>
+
+            <p class="login-link">
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <h2>AZoom</h2>
+                <h4>Your Journey. Your Way.</h4>
+                <p>
+                    Making every journey easier with convenient
+                    and affordable car rentals.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="home.html">Home</a>
+                <a href="cars.html">Our Cars</a>
+                <a href="about.html">About Us</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@azoom.com</p>
+                <p>Phone: +65 6248 9746</p>
+                <p>461 Clementi Road, Singapore 599491</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 AZoom. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="db.js"></script>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>

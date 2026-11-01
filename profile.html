@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZoom Car Rental - Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <img class="logo" src="images/Logo.png" alt="">
+
+            <section class="nav-links-and-search">
+            <div class="nav-links">
+                <a href="home.html">Home</a> 
+                <a href="cars.html">Cars</a>
+                <a href="about.html">About</a>
+            </div>
+
+            <div class="nav-search">
+                <form role="search"><input type="search" class="nav-search-input" placeholder="Search..." aria-label="Search"></form>
+                <a href="login.html" id="nav-login-btn">Login</a>
+            </div>
+            </section>
+
+        </div>
+    </header>
+<body>
+
+    <section class="profile-container">
+
+        <h1>My Account</h1>
+
+        <div class="profile-details">
+            <h2>Personal Information</h2>
+
+            <p><strong>Name:</strong> <span id="profile-name"></span></p>
+            <p><strong>Email:</strong> <span id="profile-email"></span></p>
+            <p><strong>Phone:</strong> <span id="profile-phone"></span></p>
+        </div>
+
+        <div class="profile-reservations">
+            <h2>My Reservations</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Reservation ID</th>
+                        <th>Car</th>
+                        <th>Pick-up Date</th>
+                        <th>Return Date</th>
+                        <th>Rental Cost</th>
+                        <th>Status</th>
+                        <th>Payment</th>
+                    </tr>
+                </thead>
+
+                <tbody id="reservation-list"></tbody>
+            </table>
+        </div>
+
+        <button id="logout-btn" type="button" onclick="logoutCustomer()">Logout</button>
+
+    </section>
+
+    <script src="db.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
